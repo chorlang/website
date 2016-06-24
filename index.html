@@ -1,0 +1,68 @@
+<!--Themed-->
+<h2 class="SectionTitle">Choreographies for Reliable and efficient Communication software (CRC)</h2>
+<div>
+Starting from August 1st, 2014, the development of Chor is funded for 3 years by the
+<a href="http://ufm.dk/en/research-and-innovation/funding-programmes-for-research-and-innovation/find-danish-funding-programmes/dff-the-danish-council-for-independent-research">Danish Council for Independent Research</a> - Technology and Production (DFF-FTP), under the project
+Choreographies for Reliable and efficient Communication software (CRC) led by <a href="http://www.fabriziomontesi.com/">Fabrizio Montesi</a> (grant n. DFF - 4005-00304).
+
+<br/>
+
+This webpage will report on the progress of the project and make all the researched and published material publicly available at no cost. Additional resources, such as presentations, will also be included here.
+</div>
+
+
+<h2 class="SectionTitle">What is <span style="font-family: 'Audiowide', cursive; font-size: 18pt">Chor</span>?</h2>
+<div>
+<strong>Chor</strong> is a new programming language for communicating systems, based on choreographies.
+Choreographies are global descriptions of system implementations,
+where the behaviour of all entities in a system is given in a single program.
+Choreographies enhance the quality of software,
+as they represent ``formal blueprints'' of how communicating systems should
+behave and offer a concise view of the message flows enacted by a system.
+In Chor, a choreography can then be projected (or compiled, if you like) onto a set of separate
+programs that can be run in a distributed system.
+<br/>
+<br/>
+In Chor, entities communicate over <strong>sessions</strong> (as in common web services), which are modelled as first-class language elements.
+Sessions implement <strong>protocols</strong>, which specify the order and type of some communications that have to be implemented.
+A protocol may specify, for instance, a series of message exchanges between some parties for performing the authentication of a user.
+Chor comes with an Eclipse-based <strong>IDE</strong> and a type checker that will help you with <strong>on-the-fly verification</strong>,
+ensuring that your programs will always respect the protocols that you are following.
+<br/>
+<br/>
+Chor is open source, and you can get the code from <a href="https://sourceforge.net/projects/chor/">our sourceforge project page</a>.
+The language has solid formal foundations, reported in this <a href="http://www.itu.dk/people/fabr/papers/multichor/">Technical Report</a>.
+<br/>
+<br/>
+We are currently building this site with more information every day, so come back soon!
+We are also in the process of writing a more user-friendly documentation than our technical report. Meanwhile, you can download some
+examples from our <a href="https://sourceforge.net/p/chor/code/24/tree/trunk/examples/">online example repository</a> or <a href="files/chor_examples.zip">this file</a>.
+<br/>
+<br/>
+<!-- <div style="vertical-align:middle"> -->
+  Watch the <strong>video</strong> (<a href="files/introduction_to_chor.pdf">slides</a>): <br/>
+  <iframe width="420" height="315" src="http://www.youtube.com/embed/TZ6-CiMseUc" frameborder="0" allowfullscreen></iframe>
+<!-- </div> -->
+</div>
+
+<h2 class="SectionTitle">What can I use Chor for?</h2>
+<div>
+Chor is designed to support the development of <strong>concurrent systems based on communications</strong>.
+These can range from multi-threaded systems (suitable for <strong>multicore</strong> architectures) to <strong>distributed service-oriented systems</strong>.
+We currently support the code generation of <a href="http://www.jolie-lang.org/">Jolie</a> services,
+but we plan to extend Chor to generate code in many other languages.
+</div>
+
+<h2 class="SectionTitle">Is Chor production ready?</h2>
+<div>
+Chor is still a prototype, and lacks some features that may be useful for integrating its generated code with
+existing programs. For example, Chor is still limited to simple data structures for messages, such as strings and integers,
+and does not come with an integrated debugger.
+We are continuously working for improving Chor with common features needed in production environments, so stay tuned!
+</div>
+
+<h2 class="SectionTitle">How can I install Chor?</h2>
+<div>
+See our <a href="download.html">Download page</a> for instructions on how to install Chor.
+</div>
+<br/><br/>

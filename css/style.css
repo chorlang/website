@@ -1,0 +1,279 @@
+#header {
+	font-size: 14pt;
+	font-weight: bold;
+	
+}
+
+#menu {
+/* 	text-align: center; */
+	/* Fallback for old browsers */
+/* 	background: #A9E8FD; */
+
+	/* IE */
+/* 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AACCCD', endColorstr='#7799AA'); */
+	
+	/* Webkit (Safari, Chrome, ...) */
+/* 	background: -webkit-gradient(linear, left top, left bottom, from(#AACCCD), to(#7799AA)); */
+	
+	/* Firefox */
+/* 	background: -moz-linear-gradient(top,  #AACCCD,  #7799AA); */
+}
+
+.HeaderTitle {
+	font-size: 14pt;
+	font-weight: bold;
+	margin: 5px;
+	padding: 5px;
+/* 	line-height: 100%; */
+/* 	border-radius: 2em; */
+
+/* 	-webkit-border-radius: 2em; */
+/* 	-moz-border-radius: 2em; */
+	
+	/* -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4); */
+
+	/* background: #99BBCC; */ /* for non-css3 browsers */
+	/*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#99BBCC', endColorstr='#7799AA');*/ /* for IE */
+	/* background: -webkit-gradient(linear, left top, right top, from(#A8A8A8), to(#E3E3E3));
+	
+	background: -moz-linear-gradient(right,  #A8A8A8,  #E3E3E3);  */
+
+	/* border: solid 1px #6d6d6d; */
+	border-bottom: solid 1px black;
+}
+
+.SectionTitle {
+	font-size: 14pt;
+	font-weight: bold;
+	margin: 5px;
+	padding: 5px;
+	border-bottom: 1px solid black;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.SectionContent {
+/* 	background: #82A7B9; */
+/* 	padding: 7px; */
+/* 	margin-bottom: 2em; */
+	border: 1px solid black;
+
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+
+/* #body a {
+	color: black;
+	
+	background: #D0CDCC;
+	
+	padding: 0.15em;
+	
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	
+	text-decoration: none;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+#body a:hover {
+	background: #9A9A9A;
+}
+
+#body a:visited {
+	color: black;
+}*/
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Effect 7: second border slides up */
+#body a {
+	/* padding: 12px 10px 10px; */
+	color: #566473;
+	text-shadow: none;
+}
+
+#body a::before,
+#body a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #566473;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+#body a::after {
+	opacity: 0;
+	-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+#body a:hover::before,
+#body a:hover::after,
+#body a:focus::before,
+#body a:focus::after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+#body a:hover::after,
+#body a:focus::after {
+	top: 0%;
+	opacity: 1;
+}
+
+#nav {
+	margin: 0;
+	padding: 7px 6px 0;
+ 	line-height: 100%;
+	border-radius: 2em;
+
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+
+	background: #8b8b8b; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9', endColorstr='#7a7a7a');
+	background: -webkit-gradient(linear, left top, left bottom, from(#a9a9a9), to(#7a7a7a));
+	background: -moz-linear-gradient(top,  #a9a9a9,  #7a7a7a);
+	
+	border: solid 1px #6d6d6d;
+}
+
+#nav li {
+ 	margin: 0 5px; 
+ 	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+/* main level link */
+#nav a {
+	font-weight: bold;
+	color: #e7e5e5;
+	text-decoration: none;
+	display: block;
+	padding:  8px 20px;
+	margin: 0;
+	-webkit-border-radius: 1.6em;
+	-moz-border-radius: 1.6em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+/* main level link hover */
+#nav .current, #nav li:hover > a {
+	background: #d1d1d1; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#a1a1a1'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#a1a1a1)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ebebeb,  #a1a1a1); /* for firefox 3.6+ */
+
+	color: #444;
+	border-top: solid 0px #f8f8f8;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+}
+
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.LongTextContainer {
+	text-align: justify;
+}
+
+body {
+/* 	background: #E3E3E3; */
+	background: white;
+}
+
+ul {
+	margin: 0;
+}
+
+.PubList {
+	list-style: decimal;
+}
+
+.PubList > li:hover {
+	background-color: #E0E0E0;
+	/* -moz-transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in; */
+}
+
+#body {
+	margin-top: 5px;
+	font-size: 10pt;
+	text-align: justify;
+	margin-bottom: 5px;
+	/* Fallback for old browsers */
+/* 	background: #A9E8FD; */
+
+	/* IE */
+/* 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); */
+	
+	/* Webkit (Safari, Chrome, ...) */
+/* 	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); */
+	
+	/* Firefox */
+/* 	background: -moz-linear-gradient(top,  #A9E8FD,  #88BBCC); */
+}
+
+p {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+/* .list { position: relative; }
+.list li { 
+    position: absolute; top: 0; left: 0;
+    transition: all 0.2s ease-out;
+}
+
+.list li:nth-child(1)  { transform: translate3d(0, 0%, 0); }
+.list li:nth-child(2)  { transform: translate3d(0, 100%, 0); }
+.list li:nth-child(3)  { transform: translate3d(0, 200%, 0); }
+*/
+
+
+
